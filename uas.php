@@ -63,8 +63,21 @@ echo 'b. hitung jumlah waktu istirahat per hari dan per minggu jika sekali istir
 echo '<br>';
 echo 'Jadi jumlah waktu istarahat per minggu = ', $jumlah, ' jam';
 
-echo '<br><br>';
-echo 'Karena kebutuhan kalori Fu sudah terpenuhi dan melakukan istirahat yang cukup. Bisa dikatakan kondisi Fu cukup baik. Meski begitu Fu tetap harus menjaga pola makan dan pola tidur';
+// Perhitungan keduanya
+
+// kalori
+$totalkalorinormalhari = $kalori * 3;
+$totalkalorinormalminggu = $totalkalorinormalhari * 7;
+
+// tidur
+$totaltidurnormalhari = 8;
+$totaltidurnormalminggu = $totaltidurnormalhari * 7;
+
+echo "Total jumlah kalori selama seminggu untuk sehat adalah $totalkalorinormalminggu kalori <br>";
+echo "Dan total tidur selama seminggu yang dibutuhkan untuk sehat adalah $totaltidurnormalminggu jam <br><br>";
+
+echo "Jadi, jika melihat dari kalori yang dikonsumsi dan waktu istirahat yang digunakan <br>";
+echo "Fu masih memerlukan waktu istirahat yang cukup";
 
 echo '<br><br>';
 echo 'Sekian dari saya terima kasih :)';
